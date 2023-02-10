@@ -1,0 +1,110 @@
+ /*  
+Author: Colby Stewart 
+File Name: styles.css
+Date: 02/09/2023
+*/
+
+  /*CSS Reset*/
+  body, header, nav, main, footer, img, h1, h3
+  {
+      margin: 0;
+      padding: 0;
+      border: 0;
+  }
+  
+  /*
+  Style rules for body
+   and images
+  */
+  body{
+    background-color: #6e6e6d;
+    
+  }
+  
+  img{
+    max-width: 100%;
+    display: block;
+  }
+  
+  
+  
+  /*Style rules for navigation area,*/
+  nav{
+    background-color: #070707;
+    text-decoration: none;
+    text-align: center;
+  
+  }
+  
+  nav ul{
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+  
+  }
+  
+  nav li{
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  nav li a{
+    display: block;
+    color: #f6eee4;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-decoration: none;
+  }
+  
+  /** Style rules for main content*/
+  main{
+    padding: 2%;
+    font-family: Verdana,       Arial, sans-serif;
+  }
+  
+  main p{
+    font-size: 1.25em;
+  }
+  
+  main h3{
+    padding-top: 2%;
+  }
+  
+  main ul{
+    list-style-type: square;
+  }
+  #contact{
+    text-align: center;
+    text-decoration: none;
+  }
+  .action{
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  
+  
+  /**Style rules for footer content*/
+  footer{
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f3e6d8;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+  footer a{
+    color: #f50b0b;
+    text-decoration: none;
+  }
+  
+  
+  
+  
