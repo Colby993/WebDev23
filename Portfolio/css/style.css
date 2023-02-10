@@ -23,6 +23,8 @@ Date: 02/09/2023
   
   img{
     max-width: 100%;
+    height:300px;
+    width: 300;
     display: block;
     text-align: center;
   }
