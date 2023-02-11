@@ -1,141 +1,112 @@
-@import url(https://fonts.googleapis.com/css?family=Exo);
-* {
+ /*  
+Author: Colby Stewart 
+File Name: styles.css
+Date: 02/02/2023
+*/
+  /*CSS Reset*/
+  body, header, nav, main, footer,img, h1, h3{
+    margin:0; 
+    padding:0; 
+    border:0;
+  }
+
+/*
+Style rules for body
+ and images
+*/
+body{
+  background-color: #f6eee4;
+  
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+
+
+/*Style rules for navigation area,*/
+nav{
+  background-color: #0a0a0a;
+}
+
+nav ul{
+  list-style-type: none;
   margin: 0;
-  padding: 0;
-  font-family: 'Exo', sans-serif;
-}
-
-@keyframes shutter {
-  0% {
-    background: transparent;
-    border: 1px solid rgb(15, 15, 15);
-  }
-  100% {
-    background-color: black;
-    border: 0px solid rgb(8, 8, 8);
-  }
-}
-
-body {
-  font-size: 12px;
-  background-color: black;
-}
-header{
-  color: azure;
-}
-
-.landing {
-  height: 55em;
-  width: 100%;
-  background: linear-gradient( rgba(15, 15, 15, 0.8), rgba(0, 0, 0, 0.8)), url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/KQHC0T8GSY.jpg");
-  background-size: cover;
-  background-position: center top;
-  margin-bottom: 2.5%;
-}
-
-.landingHeader {
-  padding-top: 10%;
-  text-align: center;
-  font-size: 5.5em;
-  font-weight: normal;
-  color: rgb(248, 245, 245);
-}
-
-nav {
-  width: 80%;
-  margin: 0 auto;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
   text-align: center;
 }
 
-.navButton {
-  height: 100%;
-  width: 30%;
-  font-size: 1.3em;
-  margin-left: 1.5%;
-  background-color: transparent;
-  border: 1px solid rgb(86, 8, 231);
-  color: rgb(247, 241, 241);
-  text-align: center;
+nav li{
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: Geneva, Arial, sans-serif;
+  font-weight: bold;
 }
 
-.navButton:hover {
-  cursor: pointer;
-  animation-name: shutter;
-  animation-duration: 0.5s;
-  background-color: black;
-  border: none;
+nav li a{
+  display: block;
+  color: #f8f8f8;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
 }
+
+/** Style rules for main content*/
 main{
-  color: azure;
+  padding: 2%;
+  font-family: Verdana,       Arial, sans-serif;
 }
 
-.workHeader {
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  color: white;
-  -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+main p{
+  font-size: 1.25em;
 }
 
-.work {
-  height: 55em;
-  width: 100%;
+main h3{
+  padding: 2%;
 }
 
-.sectionHeader {
-  padding-top: 4%;
+main ul{
+  list-style-type: square;
+}
+
+/**Style rules for class and id selectors*/
+.link{
+  color: #f82a06;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.action{
+  font-size: 1.75em;
+  font-weight: bold;
   text-align: center;
-  font-size: 5.5em;
-  font-weight: normal;
-  color: white;
+  color: #f6eee4;
+  background-color: #0a0a0a;
 }
 
-.sectionSub {
+#contact{
   text-align: center;
-  opacity: .87;
 }
 
-.gallery {
-  background-color: rgb(14, 13, 13);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  margin-bottom: 2.5%;
-  color: aliceblue;
-}
-
-.picture {
-  margin-left: 1%;
-  margin-top: 0.5%;
-  flex-basis: 10%  0;
-  height: 20em;
-  flex-grow: 0.3;
-  opacity: 0.8;
-  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
-footer {
-  background-color: black;
-  color: rgb(236, 234, 234);
-  height: 8.5em;
-}
-
-.footerInfo {
+/**Style rules for footer content*/
+footer{
   text-align: center;
-  padding-top: 3.5%;
-  font-size: 1.2em;
-} 
+  font-size: 0.85em;
+  background-color: #0c0c0c;
+  color: #f6eee4;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
 footer a{
-  color: red;
+  color: #be2802;
+  text-decoration: none;
 }
-  
-  
+
+
+
