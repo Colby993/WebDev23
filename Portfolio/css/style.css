@@ -76,6 +76,9 @@ main ul{
 header{
   color: #f6eee4;
 }
+div{
+  color: #f6eee4;
+}
 
 /**Style rules for class and id selectors*/
 .link{
