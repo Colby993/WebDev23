@@ -92,6 +92,9 @@ header{
   color: #f6eee4;
   background-color: #0a0a0a;
 }
+div{
+  color: #f0eded;
+}
 
 #contact{
   text-align: center;
