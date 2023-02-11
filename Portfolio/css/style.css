@@ -15,7 +15,7 @@ Style rules for body
  and images
 */
 body{
-  background-color: #f6eee4;
+  background-color: #050505;
   
 }
 
@@ -28,7 +28,7 @@ img{
 
 /*Style rules for navigation area,*/
 nav{
-  background-color: #0a0a0a;
+  background-color: #050505;
 }
 
 nav ul{
@@ -46,7 +46,7 @@ nav li{
 
 nav li a{
   display: block;
-  color: #f8f8f8;
+  color: #fdf6f6;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 2em;
@@ -57,19 +57,24 @@ nav li a{
 /** Style rules for main content*/
 main{
   padding: 2%;
-  font-family: Verdana,       Arial, sans-serif;
+  font-family: Verdana,Arial, sans-serif;
 }
 
 main p{
   font-size: 1.25em;
+ 
 }
 
 main h3{
   padding: 2%;
+ 
 }
 
 main ul{
   list-style-type: square;
+}
+header{
+  color: #f6eee4;
 }
 
 /**Style rules for class and id selectors*/
@@ -85,18 +90,19 @@ main ul{
   font-weight: bold;
   text-align: center;
   color: #f6eee4;
-  background-color: #0a0a0a;
+  background-color: #050505;
 }
 
 #contact{
   text-align: center;
+  color: #f6eee4;
 }
 
 /**Style rules for footer content*/
 footer{
   text-align: center;
   font-size: 0.85em;
-  background-color: #0c0c0c;
+  background-color: #050505;
   color: #f6eee4;
   padding-top: 1%;
   padding-bottom: 1%;
