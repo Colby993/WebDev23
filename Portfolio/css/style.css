@@ -22,33 +22,55 @@ img{
 }
 
 header{
-  width: 25%;
+  width: 50%;
   float: left;
 }
+header img{
+  margin: 0 auto;
+}
+/*show mobile class hide tablet desktop class*/
+.mobile{
+  display: block;
+}
+.tablet-desktop{
+  display: none;
+}
+
 
 nav{
-  width: 70%;
-  float: right;
-  margin: 5em 3em 0 0;
+  float:left;
+  margin: 5em 20em 0 0;
+  padding: 1%;
+  margin-bottom: 1%;
 }
 
 nav ul{
   list-style-type: none; /*no bullet on my list items*/
   margin: 0;
-  text-align: right;
+  text-align: center;
 }
 
 nav li{
   display: inline-block;
-  font-size: 1.75em;
+  font-size: 1.5em;
+  font-family: "Gloock";
+  border-top: 4px solid #faf8f8;
 }
 
 nav li a{
-  display: block;
+  display: inline-block;
   color: #fff;
   text-align: center;
   padding: 0.5em 1em; /*top-bottom: 0.5 em, left-right: 1em */
   text-decoration: none; /*remove underline from link*/
+}
+
+nav li:first-child{
+  border-top: none;  
+}
+
+.round{
+  border-radius: 20px;
 }
 
 main{
@@ -56,6 +78,8 @@ main{
   background-color: #01aa0991;
   padding: 2%;
   font-size: 1.25em;
+  max-width: 100%;
+  font-family: "Mynerve";
 }
 
 .external-link{
@@ -76,6 +100,8 @@ main{
 
 .map{
   border: 8px solid #000;
+  width: 95%;
+  height: 50%;
 }
 
 /* Footer styles for all pages */
@@ -87,6 +113,6 @@ footer p {
 }
 
 footer p a {
-  color: #f50c0c;
+  color: #fff;
   text-decoration: none;
 }
