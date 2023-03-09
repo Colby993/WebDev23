@@ -1,5 +1,5 @@
 /*
-    Author: Silvia Preston
+    Author:Colby Stewart
     Date: 2/8/2023
     Filename: style.css
 */
@@ -117,86 +117,97 @@ footer p a {
   text-decoration: none;
 }
 
- @media only screen and (min-width: 630px), print {
+@media only screen and (min-width: 630px), print {
   /*Tablet Viewport: Show tablet-desktop class, hide mobile class*/
   .tablet-desktop{
-  display: block;
+    display: block;
   }
   .mobile{
-  display: none;
+    display: none;
   }
   /*Tablet Viewport: style rule for header*/
   header{
-  position: static;
-  padding-bottom: 2%;
-  }
-  /*Tablet Viewport: Style rules for nav area*/
-  nav li{
-  border-top: none;
-  display: inline-block;
-  border-right: 1px solid #fff;
-  
-  }
-  nav li:last-child{
-  border-right: none;
-  }
-  nav li a{
-  padding: 0.1em .70em;
-  }
-  /*Tablet Viewport: Style rules for the main content area*/
-  .map{
-  width: 600px;
-  height: 450px;
-  }
-  }
-  /*Media query for desktop viewport*/  /*769px*/
-  @media only screen and (min-width: 1015px), print{
-  /*desktop viewport: style rule for header*/
-    header{
     width: 25%;
     float: left;
     padding-bottom: 0;
     }
     /*desktop viewport: style rules for the nav area*/
-    nav{
+  nav{
     float: right;
     width: 70%;
     margin: 4em 1em 0 0;
     }
-    nav ul{
+  nav ul{
     text-align: right;
     }
-    nav li{
+  nav li{
     border: none;
     }
-    nav li a{
+  nav li a:hover{
+    color: rgb(245, 9, 9);
+    background-color: #05fa11;
+    border-radius: 20px;
+    }
+  nav li:last-child{
+    border-right: none;
+  }
+  nav li a{
+    padding: 0.1em .70em;
+  }
+  /*Tablet Viewport: Style rules for the main content area*/
+  .map{
+    width: 600px;
+    height: 450px;
+  }
+  }
+  /*Media query for desktop viewport*/  /*769px*/
+@media only screen and (min-width: 1015px), print{
+  /*desktop viewport: style rule for header*/
+  header{
+    width: 25%;
+    float: left;
+    padding-bottom: 0;
+    }
+    /*desktop viewport: style rules for the nav area*/
+  nav{
+    float: right;
+    width: 70%;
+    margin: 4em 1em 0 0;
+    }
+  nav ul{
+    text-align: right;
+    }
+  nav li{
+    border: none;
+    }
+  nav li a{
     padding: 0.5em 1em;
     }
-    nav li a:hover{
-      color: rgb(245, 9, 9);
-      background-color: #05fa11;
-      border-radius: 20px;
+  nav li a:hover{
+    color: rgb(245, 9, 9);
+    background-color: #05fa11;
+    border-radius: 20px;
     }
   /*desktop viewport: style rules for the main area*/
  
   }
 
   /*media query for large desktop viewport*/
-  @media only screen and (min-width: 1921px){
-    #container{
-      width: 1920px;
-      margin: 0 auto;
+@media only screen and (min-width: 1921px){
+  #container{
+    width: 1920px;
+    margin: 0 auto;
     }
     
   }
 
   /*media query for printing*/
-  @media print{
-    body{
-      background-color: #f2f2f2;
-      color: #000;
+@media print{
+  body{
+    background-color: #f2f2f2;
+    color: #000;
     }
-    nav li a{
-      color: #000;
+  nav li a{
+    color: #000;
     }
   } 
