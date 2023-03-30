@@ -34,8 +34,60 @@
             referrerpolicy="no-referrer-when-downgrade" class="map" ></iframe></p> 
             <p>&copy; Copyright 2021. All Rights Reserved.</p>
             </section>
-        </article>
+        
+        <div id="form">
+            <h2>Please Complete the form below</h2>
+            <form class="form-grid">
+                <!--start form-->
+                <fieldset>
+                    <legend>Customer info</legend>
+                    <label for="fName">First name: </label>
+                    <input type="text" name="fName" id="fName" required />
 
+                    <label for="LName">Last name: </label>
+                    <input type="text" name="LName" id="LName" required />
+
+                    <label for="phone">Phone: </label>
+                    <input type="tel" name="phone" id="phone" required />
+                </fieldset>
+                <fieldset>
+                <legend>More info</legend>
+                <p>Can you fill out a little More</p>
+                <label for="Blue">
+                    <input type="checkbox" name="interest" id="Blue" value="Blue">blue
+                </label>
+                <label for="Red">
+                    <input type="checkbox" name="interest" id="Red" value="Red">Red
+                </label>
+                <label for="purple">
+                    <input type="checkbox" name="interest" id="purple" value="purple">Purple
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Birth Month</legend>
+                <label for="birthmonth"> Whats your birth month?</label>
+                <select name="birthmonth" id="birthmonth">
+                    <option value="aug">august</option>
+                    <option value="sep">september</option>
+                    <option value="oct">october</option>
+                    <option value="nov">november</option>
+                    <option value="dec">decemeber</option>
+                    <option value="jan">Januany</option>
+                    <option value="feb">feburary</option>
+                    <option value="march">March</option>
+                    <option value="apr">April</option>
+                    <option value="may">May</option>
+                    <option value="jun">June</option>
+                    <option value="jul">July</option>
+                </select>
+            </fieldset>
+            <label for="question">Question</label>
+            <textarea name="question" id="question" rows="5" cols="35"></textarea>
+
+            <input type="submit"  id="submit" value="Submit" class="btn">
+                </form>
+        </div>
+    </article>
 </main>
     
 </body> 
