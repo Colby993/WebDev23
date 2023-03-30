@@ -81,6 +81,21 @@ main{
   max-width: 100%;
   font-family: "Mynerve";
 }
+article{
+  padding: 2%;
+}
+article h3{
+  text-align: center;
+}
+article img{
+  margin: 0 auto;
+}
+article ul{
+  margin-left: 10%;
+}
+article:nth-of-type(2){
+  background-color: rgba(10, 179, 86, 0.3);
+}
 
 .external-link{
   color: #f31404;
@@ -152,39 +167,21 @@ footer p a {
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
   }
-  .pic-text{
-    font-size: 1em;
-    padding: 10px;
-  }
   aside{
     text-align: center;
     font-size: 1.25em;
     font-style: italic;
     font-weight: bold;
     padding: 2%;
-    background-color: rgba(6, 6, 252, 0.3);
-    box-shadow: 5px 5px 8px #012200;
-    text-shadow: 5px 5px 8px #000000;
+    background-color: rgb(112, 152, 170);
+    box-shadow: 5px 5px 10px #012200;
+    text-shadow: 5px 5px 10px #000000;
     border-radius: 0 15px;
   }
   .grid-item4{
     grid-column: 1 / span 3;
   }
    
-  #exercises{
-  clear: left;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  background: linear-gradient(to right, #ec05ce,#f0c508);
-  background-color: #f2f2f2;
-  padding: 1% 2%;
-  }
-  #exercises dt{
-  font-weight: bold;
-  }
-  #exercises dd{
-  padding: 0.5% 1% 2% 0;
-  }
   .tel-num{
   font-size: 1.25em;
   }
@@ -192,7 +189,37 @@ footer p a {
   width: 600px;
   height: 450px;
   }
-  /*tablet view style rule for table*/
+  #form{
+    margin-top: 2%;
+    background-color: #01aa0991;
+    padding: 2%;
+  }
+  
+  #form h2{
+    text-align: center;
+  }
+
+  /*style rule for form elements*/
+  fieldset,input,select,textarea{
+    margin-bottom: 2%;
+  }
+  fieldset legend{
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+  label{
+    display: block;
+    padding-top: 2%;
+  }
+  form #submit{
+    margin: 0 auto;
+    display: block;
+    padding: 2%;
+    background-color: #160466;
+    font-size: 1em;
+    border-radius: 10px;
+    }
+  /* new tablet view style rule for table*/
   table{
     border: 1px solid #070707;
     border-collapse: collapse;
@@ -214,11 +241,11 @@ footer p a {
     font-size: 1.15em;
   }
   tr:nth-child(odd){
-    background-color: #08a802;
+    background-color: #c9ec03;
   }
 
   /*tablet view style rule for for element*/
-  form{
+  #form{
     width: 70%;
     margin: 0 auto;
   }
@@ -227,75 +254,61 @@ footer p a {
   /*Media query for desktop viewport*/  /*769px*/
   @media only screen and (min-width: 1015px), print{
   /*desktop viewport: style rule for header*/
-  header{
-  width: 25%;
-  float: left;
-  padding-bottom: 0;
-  }
-  /*desktop viewport: style rules for the nav area*/
-  nav{
-  float: right;
-  width: 70%;
-  margin: 4em 1em 0 0;
-  }
-  nav ul{
-  text-align: right;
-  }
-  nav li{
-  border: none;
-  }
-  nav li a{
-  padding: 0.5em 1em;
-  }
-  nav li a:hover{
-    color: rgb(16, 235, 8);
-    background-color: #061a8d;
-    border-radius: 20px;
-  }
+    header{
+      width: 25%;
+      float: left;
+      padding-bottom: 0;
+    }
+    /*desktop viewport: style rules for the nav area*/
+    nav{
+      float: right;
+      width: 70%;
+      margin: 4em 1em 0 0;
+    }
+    nav ul{
+      text-align: right;
+      }
+    nav li{
+      border: none;
+    }
+    nav li a{
+      padding: 0.5em 1em;
+    }
+    nav li a:hover{
+      color: rgb(16, 235, 8);
+      background-color: #061a8d;
+      border-radius: 20px;
+    }
   /*desktop viewport: style rules for the main area*/
-  main{
-  clear: left;
-  }
-  main h1{
-    font-size: 1.8em;
-  }
-  article h3{
-    font-size: 1.75em;
-  }
-
-  .pic-text{
-    font-size: 1.5em;
-    padding: 20px;
-  }
-
-  .frame{
-    opacity: 0.9;
-  }
-
-  .frame:hover{
-    opacity: 1;
-    box-shadow: 10px 10px 10px #011312;
-
-  }
-  #weights, #cardio, #training{
-    width: 29%;
-    float: left;
-    margin: 0 0 2% 2%;
-  }
-  #exercises{
+    main{
     clear: left;
-  }
-  /*syle rule for form elements*/
-  form{
-    width: auto;
-  }
-  .form-grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
-  }
-  .btn{
-    grid-column: 1 / span 3;
+    }
+    main h1{
+      font-size: 1.8em;
+    }
+    article h3{
+      font-size: 1.75em;
+    }
+
+    .frame{
+      opacity: 0.9;
+    }
+
+    .frame:hover{
+      opacity: 1;
+      box-shadow: 10px 10px 10px #011312;
+
+    }
+    /*syle rule for form elements*/
+    #form{
+      width: auto;
+    }
+    .form-grid{
+      display: grid;
+      grid-gap: 20px;
+    }
+    .btn{
+      grid-column: 1 / span 3;
   }
   }
 
