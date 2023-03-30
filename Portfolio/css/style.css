@@ -94,7 +94,7 @@ article ul{
   margin-left: 10%;
 }
 article:nth-of-type(2){
-  background-color: rgba(10, 179, 86, 0.3);
+    background-color: rgba(231, 16, 34, 0.3);
 }
 
 .external-link{
