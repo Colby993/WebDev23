@@ -81,6 +81,7 @@ main{
   max-width: 100%;
   font-family: "Mynerve";
 }
+/*new style for article*/
 article{
   padding: 2%;
 }
@@ -94,7 +95,7 @@ article ul{
   margin-left: 10%;
 }
 article:nth-of-type(2){
-    background-color: rgba(231, 16, 34, 0.3);
+  background-color: rgba(231, 16, 34, 0.3);
 }
 
 .external-link{
@@ -185,6 +186,7 @@ footer p a {
   .tel-num{
   font-size: 1.25em;
   }
+  /*contact page*/
   .map{
   width: 600px;
   height: 450px;
@@ -244,7 +246,7 @@ footer p a {
     background-color: #c9ec03;
   }
 
-  /*tablet view style rule for for element*/
+  /*tablet view style rule for form element*/
   #form{
     width: 70%;
     margin: 0 auto;
@@ -299,7 +301,7 @@ footer p a {
       box-shadow: 10px 10px 10px #011312;
 
     }
-    /*syle rule for form elements*/
+    /*syle rule for form and btn53+6 elements*/
     #form{
       width: auto;
     }
