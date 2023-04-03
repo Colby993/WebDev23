@@ -81,6 +81,9 @@ main{
   max-width: 100%;
   font-family: "Mynerve";
 }
+figcaption{
+  text-align: center;
+}
 /*new style for article*/
 article{
   padding: 2%;
@@ -223,15 +226,14 @@ footer p a {
     }
   /* new tablet view style rule for table*/
   table{
-    border: 1px solid #070707;
     border-collapse: collapse;
-    margin: 0 auto;
     width: 100%;
+    margin-bottom: 20px;
   }
   caption{
     font-size: 1.5em;
     font-weight: bold;
-    padding: 1%;
+    padding: 1%
   }
   th, td{
     border: 1px solid #000;
@@ -287,6 +289,9 @@ footer p a {
     }
     main h1{
       font-size: 1.8em;
+    }
+    figcaption{
+      text-align: center;
     }
     article h3{
       font-size: 1.75em;
