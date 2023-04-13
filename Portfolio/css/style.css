@@ -28,11 +28,28 @@ header{
 header img{
   margin: 0 auto;
 }
+/* style rules for hamburger menu */
+.mobile-nav a{
+    color: #fff;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 /*show mobile class hide tablet desktop class*/
 .mobile{
   display: block;
 }
-.tablet-desktop{
+.tablet-desktop, #menu-links{
   display: none;
 }
 
@@ -138,7 +155,7 @@ footer p a {
   .tablet-desktop{
   display: block;
   }
-  .mobile{
+  .mobile, .mobile-nav{
   display: none;
   }
   /*Tablet Viewport: style rule for header*/
@@ -251,8 +268,28 @@ footer p a {
     width: 70%;
     margin: 0 auto;
   }
-
   }
+  /* Tablet Viewport: Animation */
+  @-webkit-keyframes text-animation{ /*support for Safari browser */
+    0% {font-size: 1em;}
+    50% {font-size: 2em;}
+    100% {font-size: 1.35em;}
+}
+
+@keyframes text-animation{
+    0% {font-size: 1em;}
+    50% {font-size: 2em;}
+    100% {font-size: 1.35em;}
+}
+
+figcaption{
+    -webkit-animation-name: text-animation;
+    animation-name: text-animation;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
   /*Media query for desktop viewport*/  /*769px*/
   @media only screen and (min-width: 1015px), print{
   /*desktop viewport: style rule for header*/
@@ -303,6 +340,10 @@ footer p a {
       opacity: 1;
       box-shadow: 10px 10px 10px #011312;
 
+    }
+     .offer:hover{
+        /* transform: scale(1.10); */
+        cursor: pointer;
     }
     /*syle rule for form and btn53+6 elements*/
     #form{
