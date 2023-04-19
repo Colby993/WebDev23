@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> About Colby Stewart</title>
+    <meta name="description" content="This portfolio is responsive and useable">
+	<title> Homepage Colby Stewart</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Mynerve&display=swap" rel="stylesheet">
@@ -39,25 +40,37 @@
                 <li><a href="contact.html" title="Contact Page">Contact</a></li>                               
             </ul>
         </nav>
-    
         <main>
-            <section class="mobile">This is my mobile size for my portfolio
+            <section class="mobile">
+<h2>This is my mobile size for my portfolio</h2>
                 
             </section>
             <h1>Colby Stewart Portfolio</h1>     
              <p>I'm on coding at Pearl River Community College</p> 
-             <figure>         
-             <img src="images/Colbystewarthomepage.jpg" alt="Photo of me" class="round">
-             <figcaption>Coding technology PRCC</figcaption>
-            </figure>           
-
+             <div class="grid">
+            <figure class="frame">
+                    <img src="images/Colbystewarthomepage.jpg" alt="Photo of me" class="round">
+                    <figcaption class="pic-text">Coding technology PRCC</figcaption>
+            </figure>          
+             </div>
+             <div id="music-sample">
+                <h3>Sample Music for the Homepage</h3>
+                <audio controls>
+                    <source src="Media/ffc_audio.mp3" type="audio/mp3">
+                    <source src="Media/ffc_audio.ogg" type="audio/ogg">
+                    <p>Your broswer does not support the audio element</p>
+                </audio>
+            </div>
         </main>
+
         <footer>
             <p>Colby Stewart &copy; Copyright 2023. All Rights Reserved.</p>
             <p><a href="mailto:Colby.Stewart.12@lcsd.students.org" title="Email Me">Colby.Stewart.12@lcsd.students.org</a></p>
-            <p><p><a href="https://colby993.github.io/WebDev23/" title="Homepage">Home</a></p>
-        </footer>
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+            </div>
+            </footer>
     
-    </article> <!-- end of div container -->
+     </article><!-- end of div container -->
 </body>
 </html>
